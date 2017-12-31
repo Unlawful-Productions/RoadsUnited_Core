@@ -97,6 +97,25 @@ namespace RoadsUnited_Core
 
             if (ModLoader.config.use_custom_colors == true)
             {
+				#region RoadTiny
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.small_road_brightness, "NExt2LAlley", ModLoader.modPath);
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.small_road_brightness, "NExt1LOneway", ModLoader.modPath);
+				#endregion
+				
+				#region RoadSmall
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.small_road_brightness, "NExtSmall3LRoad", ModLoader.modPath);
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.small_road_brightness, "NExtSmall4LRoad", ModLoader.modPath);
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.small_road_brightness, "Small Avenue", ModLoader.modPath);
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.small_road_brightness, "Oneway3L", ModLoader.modPath);
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.small_road_brightness, "Oneway4L", ModLoader.modPath);
+				
+                RoadColorChanger.ChangeColor(ModLoader.config.small_road_brightness, "Small Busway", ModLoader.modPath);
+                RoadColorChanger.ChangeColor(ModLoader.config.small_road_decoration, "Small Busway Decoration Grass", ModLoader.modPath);
+                RoadColorChanger.ChangeColor(ModLoader.config.small_road_decoration, "Small Busway Decoration Trees", ModLoader.modPath);
+
+                RoadColorChanger.ChangeColor(ModLoader.config.small_road_brightness, "Small Busway Oneway", ModLoader.modPath);
+                RoadColorChanger.ChangeColor(ModLoader.config.small_road_decoration, "Small Busway Oneway Decoration Grass", ModLoader.modPath);
+                RoadColorChanger.ChangeColor(ModLoader.config.small_road_decoration, "Small Busway Oneway Decoration Trees", ModLoader.modPath);
                 RoadColorChanger.ChangeColor(ModLoader.config.small_road_brightness, "Basic Road", ModLoader.modPath);
                 RoadColorChanger.ChangeColor(ModLoader.config.small_road_brightness, "Basic Road Elevated", ModLoader.modPath);
                 RoadColorChanger.ChangeColor(ModLoader.config.small_road_brightness, "Basic Road Bridge", ModLoader.modPath);
@@ -111,15 +130,13 @@ namespace RoadsUnited_Core
                 RoadColorChanger.ChangeColor(ModLoader.config.small_road_brightness, "Basic Road Slope Tram", ModLoader.modPath);
                 RoadColorChanger.ChangeColor(ModLoader.config.small_road_brightness, "Basic Road Tunnel Tram", ModLoader.modPath);
 
-
-
                 RoadColorChanger.ChangeColor(ModLoader.config.small_road_decoration, "Basic Road Decoration Grass", ModLoader.modPath);
                 RoadColorChanger.ChangeColor(ModLoader.config.small_road_decoration, "Basic Road Decoration Trees", ModLoader.modPath);
-
 
                 RoadColorChanger.ChangeColor(ModLoader.config.small_road_brightness, "Oneway Road", ModLoader.modPath);
                 RoadColorChanger.ChangeColor(ModLoader.config.small_road_brightness, "Oneway Road Elevated", ModLoader.modPath);
                 RoadColorChanger.ChangeColor(ModLoader.config.small_road_brightness, "Oneway Road Bridge", ModLoader.modPath);
+
                 RoadColorChanger.ChangeColor(ModLoader.config.small_road_decoration, "Oneway Road Decoration Grass", ModLoader.modPath);
                 RoadColorChanger.ChangeColor(ModLoader.config.small_road_decoration, "Oneway Road Decoration Trees", ModLoader.modPath);
 
@@ -128,7 +145,16 @@ namespace RoadsUnited_Core
                 RoadColorChanger.ChangeColor(ModLoader.config.small_road_brightness, "Oneway Road Bridge Tram", ModLoader.modPath);
                 RoadColorChanger.ChangeColor(ModLoader.config.small_road_brightness, "Oneway Road Slope Tram", ModLoader.modPath);
                 RoadColorChanger.ChangeColor(ModLoader.config.small_road_brightness, "Oneway Road Tunnel Tram", ModLoader.modPath);
-
+				
+                RoadColorChanger.ChangeColor(ModLoader.config.small_road_brightness, "Asymmetrical Three Lane Road", ModLoader.modPath);
+                RoadColorChanger.ChangeColor(ModLoader.config.small_road_brightness, "BasicRoadPntMdn", ModLoader.modPath);
+                RoadColorChanger.ChangeColor(ModLoader.config.small_road_brightness, "BasicRoadMdn", ModLoader.modPath);
+                RoadColorChanger.ChangeColor(ModLoader.config.small_road_brightness, "Small Road Monorail", ModLoader.modPath);
+                RoadColorChanger.ChangeColor(ModLoader.config.small_road_decoration, "BasicRoadMdn Decoration Grass", ModLoader.modPath);
+                RoadColorChanger.ChangeColor(ModLoader.config.small_road_decoration, "BasicRoadMdn Decoration Trees", ModLoader.modPath);
+				#endregion
+				
+				#region RoadMedium
                 RoadColorChanger.ChangeColor(ModLoader.config.medium_road_brightness, "Medium Road", ModLoader.modPath);
                 RoadColorChanger.ChangeColor(ModLoader.config.medium_road_brightness, "Medium Road Elevated", ModLoader.modPath);
                 RoadColorChanger.ChangeColor(ModLoader.config.medium_road_brightness, "Medium Road Bridge", ModLoader.modPath);
@@ -152,6 +178,17 @@ namespace RoadsUnited_Core
                 RoadColorChanger.ChangeColor(ModLoader.config.medium_road_brightness, "Medium Road Slope Bus", ModLoader.modPath);
                 RoadColorChanger.ChangeColor(ModLoader.config.medium_road_brightness, "Medium Road Tunnel Bus", ModLoader.modPath);
 
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.medium_road_brightness, "NExtMediumRoad", ModLoader.modPath);
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.medium_road_brightness, "NExtMediumRoadTunnel", ModLoader.modPath);
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.medium_road_brightness, "NExtMediumRoadTL", ModLoader.modPath);
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.medium_road_brightness, "NExtMediumRoadTLTunnel", ModLoader.modPath);
+				
+                RoadColorChanger.ChangeColor(ModLoader.config.medium_road_brightness, "Medium Road Monorail", ModLoader.modPath);
+                RoadColorChanger.ChangeColor(ModLoader.config.medium_road_decoration_brightness, "Avenue Large", ModLoader.modPath);
+                RoadColorChanger.ChangeColor(ModLoader.config.medium_road_decoration_brightness, "Avenue Large with Buslanes", ModLoader.modPath);
+				#endregion
+				
+				#region RoadLarge
                 RoadColorChanger.ChangeColor(ModLoader.config.large_road_brightness, "Large Road", ModLoader.modPath);
                 RoadColorChanger.ChangeColor(ModLoader.config.large_road_brightness, "Large Road Elevated", ModLoader.modPath);
                 RoadColorChanger.ChangeColor(ModLoader.config.large_road_brightness, "Large Road Bridge", ModLoader.modPath);
@@ -176,7 +213,25 @@ namespace RoadsUnited_Core
 
                 RoadColorChanger.ChangeColor(ModLoader.config.large_road_decoration_brightness, "Large Oneway Decoration Grass", ModLoader.modPath);
                 RoadColorChanger.ChangeColor(ModLoader.config.large_road_decoration_brightness, "Large Oneway Decoration Trees", ModLoader.modPath);
+				
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.large_road_brightness, "NExtLargeRoad", ModLoader.modPath);
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.large_road_brightness, "NExtLargeRoadTunnel", ModLoader.modPath);
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.large_road_brightness, "NExtLargeRoadTL", ModLoader.modPath);
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.large_road_brightness, "NExtLargeRoadTLTunnel", ModLoader.modPath);
 
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.large_road_brightness, "NExtXLargeRoad", ModLoader.modPath);
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.large_road_brightness, "NExtXLargeRoadTunnel", ModLoader.modPath);
+				
+                RoadColorChanger.ChangeColor(ModLoader.config.large_road_brightness, "Large Road With Bus Lanes", ModLoader.modPath);
+                RoadColorChanger.ChangeColor(ModLoader.config.large_road_decoration_brightness, "Large Road Decoration Grass With Bus Lanes", ModLoader.modPath);
+                RoadColorChanger.ChangeColor(ModLoader.config.large_road_decoration_brightness, "Large Road Decoration Trees With Bus Lanes", ModLoader.modPath);
+                RoadColorChanger.ChangeColor(ModLoader.config.large_road_brightness, "Large Road Elevated With Bus Lanes", ModLoader.modPath);
+                RoadColorChanger.ChangeColor(ModLoader.config.large_road_brightness, "Large Road Bridge With Bus Lanes", ModLoader.modPath);
+                RoadColorChanger.ChangeColor(ModLoader.config.large_road_brightness, "Large Road Tunnel With Bus Lanes", ModLoader.modPath);
+                RoadColorChanger.ChangeColor(ModLoader.config.large_road_brightness, "Large Road Slope With Bus Lanes", ModLoader.modPath);
+				#endregion
+				
+				#region Highway
                 RoadColorChanger.ChangeColor(ModLoader.config.highway_brightness, "HighwayRamp", ModLoader.modPath);
                 RoadColorChanger.ChangeColor(ModLoader.config.highway_brightness, "HighwayRampElevated", ModLoader.modPath);
                 RoadColorChanger.ChangeColor(ModLoader.config.highway_brightness, "HighwayRamp Slope", ModLoader.modPath);
@@ -189,25 +244,6 @@ namespace RoadsUnited_Core
                 RoadColorChanger.ChangeColor(ModLoader.config.highway_brightness, "Highway Bridge", ModLoader.modPath);
                 RoadColorChanger.ChangeColor(ModLoader.config.highway_brightness, "Highway Barrier", ModLoader.modPath);
 
-                RoadColorChanger.ChangeColorNetExt(ModLoader.config.small_road_brightness, "NExt2LAlley", ModLoader.modPath);
-                RoadColorChanger.ChangeColorNetExt(ModLoader.config.small_road_brightness, "NExt1LOneway", ModLoader.modPath);
-                RoadColorChanger.ChangeColorNetExt(ModLoader.config.small_road_brightness, "NExtSmall3LRoad", ModLoader.modPath);
-                RoadColorChanger.ChangeColorNetExt(ModLoader.config.small_road_brightness, "NExtSmall4LRoad", ModLoader.modPath);
-                RoadColorChanger.ChangeColorNetExt(ModLoader.config.small_road_brightness, "Small Avenue", ModLoader.modPath);
-                RoadColorChanger.ChangeColorNetExt(ModLoader.config.small_road_brightness, "Oneway3L", ModLoader.modPath);
-                RoadColorChanger.ChangeColorNetExt(ModLoader.config.small_road_brightness, "Oneway4L", ModLoader.modPath);
-                RoadColorChanger.ChangeColorNetExt(ModLoader.config.medium_road_brightness, "NExtMediumRoad", ModLoader.modPath);
-                RoadColorChanger.ChangeColorNetExt(ModLoader.config.medium_road_brightness, "NExtMediumRoadTunnel", ModLoader.modPath);
-                RoadColorChanger.ChangeColorNetExt(ModLoader.config.medium_road_brightness, "NExtMediumRoadTL", ModLoader.modPath);
-                RoadColorChanger.ChangeColorNetExt(ModLoader.config.medium_road_brightness, "NExtMediumRoadTLTunnel", ModLoader.modPath);
-                RoadColorChanger.ChangeColorNetExt(ModLoader.config.large_road_brightness, "NExtLargeRoad", ModLoader.modPath);
-                RoadColorChanger.ChangeColorNetExt(ModLoader.config.large_road_brightness, "NExtLargeRoadTunnel", ModLoader.modPath);
-                RoadColorChanger.ChangeColorNetExt(ModLoader.config.large_road_brightness, "NExtLargeRoadTL", ModLoader.modPath);
-                RoadColorChanger.ChangeColorNetExt(ModLoader.config.large_road_brightness, "NExtLargeRoadTLTunnel", ModLoader.modPath);
-
-                RoadColorChanger.ChangeColorNetExt(ModLoader.config.large_road_brightness, "NExtXLargeRoad", ModLoader.modPath);
-                RoadColorChanger.ChangeColorNetExt(ModLoader.config.large_road_brightness, "NExtXLargeRoadTunnel", ModLoader.modPath);
-
                 RoadColorChanger.ChangeColorNetExt(ModLoader.config.highway_national_brightness, "NExtHighway1L", ModLoader.modPath);
                 RoadColorChanger.ChangeColorNetExt(ModLoader.config.highway_national_brightness, "NExtHighwayTunnel1LTunnel", ModLoader.modPath);
                 RoadColorChanger.ChangeColorNetExt(ModLoader.config.highway_brightness, "NExtHighway2L", ModLoader.modPath);
@@ -219,25 +255,12 @@ namespace RoadsUnited_Core
                 RoadColorChanger.ChangeColorNetExt(ModLoader.config.highway_brightness, "NExtHighway6L", ModLoader.modPath);
                 RoadColorChanger.ChangeColorNetExt(ModLoader.config.highway_brightness, "NExtHighwayTunnel6LTunnel", ModLoader.modPath);
 
-
-
-                RoadColorChanger.ChangeColor(ModLoader.config.small_road_brightness, "Small Busway", ModLoader.modPath);
-                RoadColorChanger.ChangeColor(ModLoader.config.small_road_decoration, "Small Busway Decoration Grass", ModLoader.modPath);
-                RoadColorChanger.ChangeColor(ModLoader.config.small_road_decoration, "Small Busway Decoration Trees", ModLoader.modPath);
-
-                RoadColorChanger.ChangeColor(ModLoader.config.small_road_brightness, "Small Busway Oneway", ModLoader.modPath);
-                RoadColorChanger.ChangeColor(ModLoader.config.small_road_decoration, "Small Busway Oneway Decoration Grass", ModLoader.modPath);
-                RoadColorChanger.ChangeColor(ModLoader.config.small_road_decoration, "Small Busway Oneway Decoration Trees", ModLoader.modPath);
-
-                RoadColorChanger.ChangeColor(ModLoader.config.large_road_brightness, "Large Road With Bus Lanes", ModLoader.modPath);
-                RoadColorChanger.ChangeColor(ModLoader.config.large_road_decoration_brightness, "Large Road Decoration Grass With Bus Lanes", ModLoader.modPath);
-                RoadColorChanger.ChangeColor(ModLoader.config.large_road_decoration_brightness, "Large Road Decoration Trees With Bus Lanes", ModLoader.modPath);
-                RoadColorChanger.ChangeColor(ModLoader.config.large_road_brightness, "Large Road Elevated With Bus Lanes", ModLoader.modPath);
-                RoadColorChanger.ChangeColor(ModLoader.config.large_road_brightness, "Large Road Bridge With Bus Lanes", ModLoader.modPath);
-                RoadColorChanger.ChangeColor(ModLoader.config.large_road_brightness, "Large Road Tunnel With Bus Lanes", ModLoader.modPath);
-                RoadColorChanger.ChangeColor(ModLoader.config.large_road_brightness, "Large Road Slope With Bus Lanes", ModLoader.modPath);
-
-
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.highway_brightness, "Two Lane Highway Twoway", ModLoader.modPath);
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.highway_brightness, "Two Lane Highway", ModLoader.modPath);
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.highway_brightness, "Four Lane Highway", ModLoader.modPath);
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.highway_brightness, "Highway L1R2", ModLoader.modPath);
+                RoadColorChanger.ChangeColorNetExt(ModLoader.config.highway_brightness, "Highway2L2W", ModLoader.modPath);
+				#endregion
 
                 RoadColorChanger.ReplaceLodAprAtlas();
             }
